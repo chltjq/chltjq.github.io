@@ -1,8 +1,8 @@
 ---
 layout: post
-title:Mybatis resultMap 결과 여러개 받기
+title: "Mybatis resultMap 결과 여러개 받기"
 date: 2021-04-14 17:53:02 +0900
-category:mybatis
+category: mybatis
 ---
 
 mybatis에서 쿼리 한번에 결과를 2개의 vo로 나눠 받아야 할 일이 생겼다.
@@ -11,7 +11,6 @@ mybatis에서 쿼리 한번에 결과를 2개의 vo로 나눠 받아야 할 일�
 
 그래서 사용한 방법이 map으로 resultMap을 만들고 그 안에 collection으로 결과를 받을 vo 2개를 넣어주는 방법이였다.
 
-This is code
 ```ruby
 <resultMap id="PineoneBoardsVo" type="com.lguplus.test.database.dto.PineoneBoardsVo">
 		<id property="boardKey"	column="board_key"	jdbcType="BIGINT"	javaType="java.lang.Long"/>
